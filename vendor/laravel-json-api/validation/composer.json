@@ -1,0 +1,61 @@
+{
+    "name": "laravel-json-api/validation",
+    "description": "Laravel validation for JSON:API resources.",
+    "keywords": [
+        "jsonapi.org",
+        "json-api",
+        "jsonapi",
+        "laravel"
+    ],
+    "homepage": "https://github.com/laravel-json-api/validation",
+    "support": {
+        "issues": "https://github.com/laravel-json-api/validation/issues"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Cloud Creativity Ltd",
+            "email": "info@cloudcreativity.co.uk"
+        },
+        {
+            "name": "Christopher Gammie",
+            "email": "contact@gammie.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "illuminate/contracts": "^10.0",
+        "illuminate/support": "^10.0",
+        "laravel-json-api/core": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^9.5.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelJsonApi\\Validation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelJsonApi\\Validation\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "3.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "LaravelJsonApi\\Validation\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}

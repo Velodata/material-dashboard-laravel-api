@@ -1,0 +1,58 @@
+{
+    "name": "laravel-json-api/exceptions",
+    "description": "JSON:API exception parsing for Laravel applications.",
+    "keywords": [
+        "jsonapi.org",
+        "json-api",
+        "jsonapi",
+        "laravel"
+    ],
+    "homepage": "https://github.com/laravel-json-api/exceptions",
+    "support": {
+        "issues": "https://github.com/laravel-json-api/exceptions/issues"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Cloud Creativity Ltd",
+            "email": "info@cloudcreativity.co.uk"
+        },
+        {
+            "name": "Christopher Gammie",
+            "email": "contact@gammie.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "illuminate/contracts": "^10.0",
+        "illuminate/pipeline": "^10.0",
+        "laravel-json-api/core": "^3.0",
+        "laravel-json-api/validation": "^3.0"
+    },
+    "require-dev": {
+        "laravel-json-api/testing": "^2.0",
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^9.5.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelJsonApi\\Exceptions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelJsonApi\\Exceptions\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "2.x-dev"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
